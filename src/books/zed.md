@@ -1,0 +1,12 @@
+---
+title: "Zed"
+author: "Joanna Kavenna"
+isbn: ""
+isbn13: ""
+rating: "5"
+publisher: "Faber & Faber"
+pages: "400"
+publishYear: "2019"
+read: "2019"
+goodreads_id: "37508642"
+---
