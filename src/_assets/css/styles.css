@@ -1,0 +1,35 @@
+body {
+  font: 100%/1.5 'Fira Sans', sans-serif;
+}
+h1, h2 {
+  text-align: center;
+}
+ul {
+  padding: 0;
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(auto-fill, 10em);
+  justify-content: center;
+}
+li {
+  list-style: none;
+  background-color: #444;
+}
+li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+li img {
+  width: 100%;
+  display: block;
+  background: #555;
+}
+li span {
+  display: block;
+  padding: 1em;
+  text-align: center;
+}
+img {
+  max-width: 100%;
+}

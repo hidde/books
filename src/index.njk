@@ -1,0 +1,29 @@
+---
+layout: base
+---
+
+<h1>Books</h1>
+
+<h2>2020 ({{ collections["2020"].length }})</h2>
+<ul>
+{%- for book in collections["2020"] -%}
+<li>
+  <a href="{{ book.url }}">
+    <img src="http://covers.openlibrary.org/b/isbn/{{ book.data.isbn }}-L.jpg" alt="" lazyload />
+    <span>{{ book.data.title }} by {{ book.data.author }}</span>
+  </a>
+</li>
+{%- endfor -%}
+</ul>
+
+<h2>2019 ({{ collections["2019"].length }})</h2>
+<ul>
+{%- for book in collections["2019"] -%}
+<li>
+  <a href="{{ book.url }}">
+    <img src="http://covers.openlibrary.org/b/isbn/{{ book.data.isbn }}-L.jpg" alt="" lazyload />
+    <span>{{ book.data.title }} by {{ book.data.author }}</span>
+  </a>
+</li>
+{%- endfor -%}
+</ul>
