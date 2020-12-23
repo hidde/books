@@ -1,6 +1,12 @@
 body {
   background-color: #b0b0b0;
   font: 100%/1.5 'Fira Sans', sans-serif;
+  padding-top: 28vw;
+}
+@media (min-width: 50em) {
+  body {
+    padding-top: 0;
+  }
 }
 :focus {
   outline: 2px solid currentColor;
@@ -13,8 +19,11 @@ body {
   top: -9999em;
 }
 .logo {
-  font: 27vw/0 'Bungee Outline';
+  font: 25vw/0 'Bungee Outline';
   white-space: nowrap;
+  position: absolute;
+  top: -9vw;
+  left: 2vw;
 }
 .logo span {
   transform: rotate(-5deg);
@@ -23,12 +32,12 @@ body {
 }
 @media (min-width: 50em) {
   .logo {
-  position: sticky;
-  top: -4vw;
-  left: 0;
-  z-index: -1;
-  margin-bottom: 0;
-  margin-top: 12vw;
+    position: sticky;
+    top: -4vw;
+    left: 0;
+    z-index: -1;
+    margin-bottom: 0;
+    margin-top: 12vw;
   }
   h2 {
     position: sticky;
@@ -95,14 +104,17 @@ img {
 nav {
   background-color: rgba(0, 0, 0, 0.6);
   padding: .5em 1em;
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
   gap: .75em;
-  margin: 0 -1em;
+  margin: 0 -.5em;
 }
 nav a {
   color: white;
   text-decoration: none;
   font-size: 90%;
+  padding: .25em;
 }
 nav a[aria-current="true"] {
   color: black;
