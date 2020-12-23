@@ -14,12 +14,6 @@ body {
 }
 .logo {
   font: 27vw/0 'Bungee Outline';
-  position: sticky;
-  top: -4vw;
-  left: 0;
-  z-index: -1;
-  margin-bottom: 0;
-  margin-top: 12vw;
   white-space: nowrap;
 }
 .logo span {
@@ -27,10 +21,20 @@ body {
   display: inline-block;
   color: #555;
 }
-h2 {
+@media (min-width: 50em) {
+  .logo {
   position: sticky;
-  top: 2em;
+  top: -4vw;
+  left: 0;
   z-index: -1;
+  margin-bottom: 0;
+  margin-top: 12vw;
+  }
+  h2 {
+    position: sticky;
+    top: 2em;
+    z-index: -1;
+  }
 }
 h2 span {
   display: inline-block;
@@ -43,12 +47,16 @@ h2 span {
 }
 ul {
   padding: 0;
-  margin-left: 7em;
   display: grid;
   gap: 1em;
   grid-template-columns: repeat(auto-fill, 10em);
   justify-content: center;
   align-items: start;
+}
+@media (min-width: 50em) {
+  ul {
+    margin-left: 7em;
+  }
 }
 li {
   list-style: none;
@@ -86,16 +94,15 @@ img {
 }
 nav {
   background-color: rgba(0, 0, 0, 0.6);
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: .5em;
+  padding: .5em 1em;
   display: flex;
   gap: .75em;
+  margin: 0 -1em;
 }
 nav a {
   color: white;
   text-decoration: none;
+  font-size: 90%;
 }
 nav a[aria-current="true"] {
   color: black;
@@ -106,6 +113,15 @@ nav::before {
   /* display: block; */
   color: white;
   font-weight: bold;
+}
+@media (min-width: 50em) {
+  nav {
+    padding: .5em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+  }
 }
 summary {
   list-style: none;
