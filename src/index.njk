@@ -2,9 +2,10 @@
 layout: base
 ---
 
-<h1>Books</h1>
+<h1>B<span>o</span>o<span>k</span>s</h1>
 
-<h2>2020 ({{ collections["2020"].length }})</h2>
+<h2><span>2020</span></h2>
+<span hidden>({{ collections["2020"].length }})</span>
 <ul>
 {%- for book in collections["2020"] -%}
 <li>
