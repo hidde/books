@@ -1,0 +1,21 @@
+<li>
+  <img src="/covers/{{ book.fileSlug }}.jpg" alt="" lazyload />
+  <details>
+    <summary>
+      <div>
+        <strong>{{ book.data.title }}</strong> by {{ book.data.author }}
+      </div>
+    </summary>
+    <p>
+      {{ book.data.rating }}<span aria-hidden="true">✯</span><span class="visually-hidden">stars</span> 
+      <span aria-hidden="true">・</span>
+      {{ book.data.pages }} pages 
+      <span aria-hidden="true">・</span> 
+      {{ book.data.publisher }} ({{ book.data.publishYear }})
+      {% if book.data.authorSite %}
+      <span aria-hidden="true">・</span> 
+      <a href="{{ book.data.authorSite }}">Author's site</a>
+      {% endif %}
+    </p>
+  </details>
+</li>

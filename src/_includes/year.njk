@@ -4,10 +4,10 @@
 {%- for book in collections[year] -%}
 {% if filterLanguage %}
   {% if book.data.language == filterLanguage %}
-    {% include "book-preview.njk" %}
+    {% include "book.njk" %}
   {% endif %}
 {% else %}
-  {% include "book-preview.njk" %}
+  {% include "book.njk" %}
 {% endif %}
 {%- endfor -%}
 </ul>

@@ -2,7 +2,17 @@ body {
   background-color: #b0b0b0;
   font: 100%/1.5 'Fira Sans', sans-serif;
 }
-h1 {
+:focus {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 blue;
+}
+.visually-hidden {
+  position: absolute;
+  left: -9999em;
+  top: -9999em;
+}
+.logo {
   font: 27vw/0 'Bungee Outline';
   position: sticky;
   top: -4vw;
@@ -12,7 +22,7 @@ h1 {
   margin-top: 12vw;
   white-space: nowrap;
 }
-h1 span {
+.logo span {
   transform: rotate(-5deg);
   display: inline-block;
   color: #555;
@@ -38,28 +48,30 @@ ul {
   gap: 1em;
   grid-template-columns: repeat(auto-fill, 10em);
   justify-content: center;
-  align-items: center;
+  align-items: start;
 }
 li {
   list-style: none;
   background-color: #444;
+  color: white;
+}
+li:nth-child(odd) {
+  margin-top: 1em;
 }
 li a {
-  display: block;
-  height: 100%;
   color: white;
-  text-decoration: none;
   transition: all 0.2s ease-in-out;
 }
 li a:hover {
-  background-color: #000;
+  color: #eee;
 }
 li img {
   width: 100%;
   display: block;
   background: #555;
 }
-li div {
+li div,
+li p {
   display: block;
   padding: 1em;
   text-align: center;
@@ -88,4 +100,16 @@ nav::before {
   display: block;
   color: white;
   font-weight: bold;
+}
+summary {
+  list-style: none;
+}
+summary::-webkit-details-marker,
+summary::marker
+{
+  list-style: none;
+  display: none;
+}
+summary:focus {
+  outline-offset: -1px;
 }
