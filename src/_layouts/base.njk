@@ -13,9 +13,9 @@
 <body>
   <h1 class="logo">B<span>o</span>o<span>k</span>s</h1>
   <nav aria-label="Language filter">
-    <a href="/">All books</a>
-    <a href="/in/english">English only</a>
-    <a href="/in/nederlands">Alleen Nederlands</a>
+    <a href="/" {% if page.url == "/" %}aria-current="true"{% endif %}>All books</a>
+    <a href="/in/english/" {% if page.url == "/in/english/" %}aria-current="true"{% endif %}>English only</a>
+    <a lang="nl" href="/in/nederlands/"{% if page.url == "/in/nederlands/" %} aria-current="true"{% endif %}>Alleen Nederlands</a>
   </nav>
   {{ content | safe }}
 </body>

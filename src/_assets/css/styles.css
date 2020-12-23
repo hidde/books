@@ -90,14 +90,20 @@ nav {
   top: 0;
   right: 0;
   padding: .5em;
+  display: flex;
+  gap: .75em;
 }
 nav a {
   color: white;
   text-decoration: none;
 }
+nav a[aria-current="true"] {
+  color: black;
+  background-color: white;
+}
 nav::before {
-  content: attr(aria-label);
-  display: block;
+  /* content: attr(aria-label); */
+  /* display: block; */
   color: white;
   font-weight: bold;
 }
