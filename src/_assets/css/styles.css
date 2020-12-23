@@ -19,8 +19,7 @@ h1 span {
 h2 {
   position: sticky;
   top: 2em;
-  background-color: maroon;
-  z-index: -2;
+  z-index: -1;
 }
 h2 span {
   display: inline-block;
