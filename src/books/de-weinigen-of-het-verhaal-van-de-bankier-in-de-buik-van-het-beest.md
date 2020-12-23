@@ -7,6 +7,6 @@ rating: "0"
 publisher: "Uitgeverij In de Knipscheer"
 pages: "223"
 publishYear: "2019"
-read: ""
+read: "2020"
 goodreads_id: "52149555"
 ---

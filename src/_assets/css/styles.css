@@ -18,18 +18,28 @@ li {
 }
 li a {
   display: block;
+  height: 100%;
   color: white;
   text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+li a:hover {
+  background-color: #000;
 }
 li img {
   width: 100%;
   display: block;
   background: #555;
 }
-li span {
+li div {
   display: block;
   padding: 1em;
   text-align: center;
+  font-size: 90%;
+}
+li strong {
+  display: block;
+  font-size: 110%;
 }
 img {
   max-width: 100%;
