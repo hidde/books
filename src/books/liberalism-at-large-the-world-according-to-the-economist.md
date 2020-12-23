@@ -7,6 +7,7 @@ rating: "0"
 publisher: "Verso"
 pages: "553"
 publishYear: "2019"
-read: ""
+read: "2020"
 goodreads_id: "52105758"
+language: "en"
 ---

@@ -9,4 +9,5 @@ pages: "288"
 publishYear: "2019"
 read: ""
 goodreads_id: "46129024"
+language: "en"
 ---

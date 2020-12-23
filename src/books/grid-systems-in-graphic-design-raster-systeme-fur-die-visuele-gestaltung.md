@@ -7,6 +7,7 @@ rating: "0"
 publisher: "Ingram"
 pages: "176"
 publishYear: "1996"
-read: ""
+read: "2017"
 goodreads_id: "350962"
+language: "en"
 ---

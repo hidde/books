@@ -7,6 +7,7 @@ rating: "4"
 publisher: "Penguin Books"
 pages: "491"
 publishYear: "2014"
-read: ""
+read: "2017"
 goodreads_id: "21075514"
+language: "en"
 ---

@@ -70,3 +70,20 @@ li strong {
 img {
   max-width: 100%;
 }
+nav {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: .5em;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+nav::before {
+  content: attr(aria-label);
+  display: block;
+  color: white;
+  font-weight: bold;
+}

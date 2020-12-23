@@ -9,4 +9,5 @@ pages: "576"
 publishYear: "2020"
 read: ""
 goodreads_id: "56028895"
+language: "nl"
 ---

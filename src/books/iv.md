@@ -7,6 +7,7 @@ rating: "4"
 publisher: "Podium"
 pages: "314"
 publishYear: "2013"
-read: ""
+read: "2017"
 goodreads_id: "17375431"
+language: "nl"
 ---

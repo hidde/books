@@ -10,6 +10,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&amp;text=Books&family=Fira+Sans&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    {{ content | safe }}
+  <h1>B<span>o</span>o<span>k</span>s</h1>
+  <nav aria-label="Language filter">
+    <a href="/">All books</a>
+    <a href="/in/english">English only</a>
+    <a href="/in/nederlands">Alleen Nederlands</a>
+  </nav>
+  {{ content | safe }}
 </body>
 </html>

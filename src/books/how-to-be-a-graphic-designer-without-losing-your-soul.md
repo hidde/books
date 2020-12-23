@@ -7,6 +7,7 @@ rating: "0"
 publisher: "Princeton Architectural Press"
 pages: "160"
 publishYear: "2005"
-read: ""
+read: "2017"
 goodreads_id: "164194"
+language: "en"
 ---

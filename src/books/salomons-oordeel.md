@@ -7,6 +7,7 @@ rating: "0"
 publisher: "Lebowski"
 pages: "240"
 publishYear: "2019"
-read: ""
+read: "2020"
 goodreads_id: "44086917"
+language: "nl"
 ---

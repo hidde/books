@@ -7,6 +7,7 @@ rating: "0"
 publisher: "Podium"
 pages: "318"
 publishYear: "2011"
-read: ""
+read: "2017"
 goodreads_id: "10803163"
+language: "nl"
 ---

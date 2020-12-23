@@ -9,4 +9,5 @@ pages: "192"
 publishYear: "2017"
 read: "2019"
 goodreads_id: "34609368"
+language: "nl"
 ---

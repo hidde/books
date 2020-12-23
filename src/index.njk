@@ -2,18 +2,6 @@
 layout: base
 ---
 
-<h1>B<span>o</span>o<span>k</span>s</h1>
-
-<h2><span>2020</span></h2>
-<span hidden>({{ collections["2020"].length }})</span>
-<ul>
-{%- for book in collections["2020"] -%}
-<li>
-  <a href="{{ book.url }}">
-    <img src="../covers/{{ book.fileSlug }}.jpg" alt="" lazyload />
-    <div><strong>{{ book.data.title }}</strong> by {{ book.data.author }}</div>
-  </a>
-</li>
-{%- endfor -%}
-</ul>
-
+{% for year in years %}
+{% include "year.njk" %}
+{% endfor %}

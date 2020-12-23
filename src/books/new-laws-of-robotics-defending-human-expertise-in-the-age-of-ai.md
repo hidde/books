@@ -7,6 +7,7 @@ rating: "0"
 publisher: "Belknap Press"
 pages: "352"
 publishYear: "2020"
-read: ""
+read: "2020"
 goodreads_id: "51343034"
+language: "en"
 ---

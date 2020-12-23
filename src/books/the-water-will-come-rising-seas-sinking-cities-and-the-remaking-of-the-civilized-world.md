@@ -9,4 +9,5 @@ pages: "352"
 publishYear: "2017"
 read: ""
 goodreads_id: "34523152"
+language: "en"
 ---
