@@ -1,5 +1,5 @@
 ---
-title: "Zelfverwoestingsboek: waarom we meer moeten stinken, drinken, bloeden, branden en dansen"
+title: "Zelfverwoestings&shy;boek: waarom we meer moeten stinken, drinken, bloeden, branden en dansen"
 author: "Marian Donner"
 isbn: ""
 isbn13: "9789492478917"

@@ -3,7 +3,7 @@
     <summary>
       <img src="/covers/{{ book.fileSlug }}.jpg" alt="" lazyload />
       <div{% if book.data.language != "en" %} lang="{{ book.data.language }}"{% endif %}>
-        <strong>{{ book.data.title }}</strong> 
+        <strong>{{ book.data.title | safe }}</strong> 
         {% if book.data.language == "nl" %}door{% else %}by{% endif %} {{ book.data.author }}
       </div>
     </summary>
