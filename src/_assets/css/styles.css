@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: #b0b0b0;
   font: 100%/1.5 'Fira Sans', sans-serif;
@@ -7,6 +10,29 @@ body {
   body {
     padding-top: 0;
   }
+  body.home {
+    padding-top: 50vh;
+  }
+  body.home > aside {
+    position: absolute;
+    top: 1em;
+    left: 3em;
+  }
+  body.home > aside p:first-child {
+    font-size: 140%;
+    max-width: 20em;
+  }
+}
+body.home > aside p:last-child {
+  font-size: 80%;
+  margin-top: 2em;
+  font-style: italic;
+}
+a {
+  color: currentColor;
+}
+a:hover {
+  color: #555;
 }
 :focus {
   outline: 2px solid currentColor;
@@ -33,6 +59,7 @@ body {
 @media (min-width: 50em) {
   .logo {
     position: sticky;
+    font-size: 27vw;
     top: -4vw;
     left: 0;
     z-index: -1;
@@ -45,6 +72,15 @@ body {
     z-index: -1;
   }
 }
+.hiddedevriesnl {
+  border: 0;
+  border-radius: 100%;
+  width: 3em;
+  display: block;
+}
+  .hiddedevriesnl img {
+    border-radius: 100%;
+  }
 h2 span {
   display: inline-block;
   background-color: black;
@@ -137,12 +173,20 @@ nav::before {
 }
 summary {
   list-style: none;
+  cursor: pointer;
 }
 summary::-webkit-details-marker,
 summary::marker
 {
   list-style: none;
   display: none;
+}
+summary:hover img {
+  transition: transform 0.2s;
+  transform: scale(1.05);
+}
+summary:hover:focus img {
+  transform: none;
 }
 summary:focus {
   outline-offset: -1px;

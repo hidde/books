@@ -2,8 +2,9 @@
   <details>
     <summary>
       <img src="/covers/{{ book.fileSlug }}.jpg" alt="" lazyload />
-      <div>
-        <strong>{{ book.data.title }}</strong> by {{ book.data.author }}
+      <div{% if book.data.language != "en" %} lang="{{ book.data.language }}"{% endif %}>
+        <strong>{{ book.data.title }}</strong> 
+        {% if book.data.language == "nl" %}door{% else %}by{% endif %} {{ book.data.author }}
       </div>
     </summary>
     <p>

@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&text=Books" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet"> 
 </head>
-<body>
+<body{% if pageClass %} class="{{ pageClass }}"{% endif %}>
   <h1 class="logo">B<span>o</span>o<span>k</span>s</h1>
   <nav aria-label="Language filter">
     <a href="/" {% if page.url == "/" %}aria-current="true"{% endif %}>All books</a>
