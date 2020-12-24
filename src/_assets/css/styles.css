@@ -152,6 +152,9 @@ nav a {
   font-size: 90%;
   padding: .25em;
 }
+nav a:hover {
+  color: #ddd;
+}
 nav a[aria-current="true"] {
   color: black;
   background-color: white;
