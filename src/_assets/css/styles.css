@@ -12,6 +12,7 @@ body {
   }
   body.home {
     padding-top: 50vh;
+    background-image: linear-gradient(#fff 0, #fff 80vh, #b0b0b0 100vh);
   }
   body.home > aside {
     position: absolute;
@@ -145,6 +146,7 @@ nav {
   grid-auto-columns: max-content;
   gap: .75em;
   margin: 0 -.5em;
+  overflow: auto;
 }
 nav a {
   color: white;
