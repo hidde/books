@@ -19,6 +19,9 @@ body {
     top: 1em;
     left: 3em;
   }
+  body.home > aside p {
+    max-width: 30em;
+  }
   body.home > aside p:first-child {
     font-size: 140%;
     max-width: 20em;
