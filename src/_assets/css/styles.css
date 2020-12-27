@@ -2,7 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: #b0b0b0;
+  background-color: lavenderblush;
   font: 100%/1.5 'Fira Sans', sans-serif;
   padding-top: 28vw;
 }
@@ -12,19 +12,11 @@ body {
   }
   body.home {
     padding-top: 50vh;
-    background-image: linear-gradient(#fff 0, #fff 80vh, #b0b0b0 100vh);
   }
   body.home > aside {
     position: absolute;
     top: 1em;
     left: 3em;
-  }
-  body.home > aside p {
-    max-width: 30em;
-  }
-  body.home > aside p:first-child {
-    font-size: 140%;
-    max-width: 20em;
   }
 }
 body.home > aside p:last-child {
@@ -205,4 +197,5 @@ summary:hover:focus img {
 }
 summary:focus {
   outline-offset: -1px;
+  box-shadow: 0px 0 0px 3px darkslategray;
 }
