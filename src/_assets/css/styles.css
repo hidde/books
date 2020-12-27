@@ -197,4 +197,5 @@ summary:hover:focus img {
 }
 summary:focus {
   outline-offset: -1px;
+  box-shadow: 0px 0 0px 3px darkslategray;
 }
