@@ -1,4 +1,10 @@
 const bookCover = require("./src/_utils/bookCover.js");
+const years = [
+  "2020", 
+  "2019", 
+  "2018",
+  "2017"
+];
 
 module.exports = (function(eleventyConfig) {
     

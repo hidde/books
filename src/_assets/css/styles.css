@@ -73,10 +73,18 @@ a:hover {
   border-radius: 100%;
   width: 3em;
   display: block;
+  position: absolute;
+  top: 7vw;
+  left: 11vw;
 }
   .hiddedevriesnl img {
     border-radius: 100%;
   }
+@media (min-width: 50em) {
+  .hiddedevriesnl {
+    position: static;
+  }
+} 
 h2 span {
   display: inline-block;
   background-color: black;
