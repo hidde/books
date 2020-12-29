@@ -1,7 +1,6 @@
 const bookCover = require("./src/_utils/bookCover.js");
 
 module.exports = (function(eleventyConfig) {
-  const years = ["2020", "2019", "2018", "2017"];
     
   // create a collection of issues specific to each report, sorted by success criterion
   for (let i=0; i < years.length; i++) {
