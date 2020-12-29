@@ -17,6 +17,42 @@
     <a href="/in/english/" {% if page.url == "/in/english/" %}aria-current="true"{% endif %}>English only</a>
     <a lang="nl" href="/in/nederlands/"{% if page.url == "/in/nederlands/" %} aria-current="true"{% endif %}>Alleen Nederlands</a>
   </nav>
+
   {{ content | safe }}
+
+  {% for year in years %}
+  <h2 id="{{ year }}"><span>{{ year }}</span></h2>
+    <ul>
+    {% for book in collections[year] %}
+      {% if page.url == "/in/english/" and book.data.language != "en" %}
+      {% elif page.url == "/in/nederlands/" and book.data.language != "nl" %}
+      {% else %}
+      <li>
+        <details>
+          <summary>
+            {% set coverUri %}./src/covers/{{ book.fileSlug }}.jpg{% endset %}
+            {% book_cover coverUri, "", "30vh, (min-width: 50em) 160px" %}
+            <div{% if book.data.language != "en" %} lang="{{ book.data.language }}"{% endif %}>
+              <strong>{{ book.data.title | safe }}</strong> 
+              {% if book.data.language == "nl" %}door{% else %}by{% endif %} {{ book.data.author }}
+            </div>
+          </summary>
+          <p>
+            {{ book.data.rating }}<span aria-hidden="true">✯</span><span class="visually-hidden">stars</span> 
+            <span aria-hidden="true">・</span>
+            {{ book.data.pages }} pages 
+            <span aria-hidden="true">・</span> 
+            {{ book.data.publisher }} ({{ book.data.publishYear }})
+            {% if book.data.authorSite %}
+            <span aria-hidden="true">・</span> 
+            <a href="{{ book.data.authorSite }}">Author's site</a>
+            {% endif %}
+          </p>
+        </details>
+      </li>
+    {% endif %}
+  {% endfor %} 
+  </ul>
+  {% endfor %}
 </body>
 </html>

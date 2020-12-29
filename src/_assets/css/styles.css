@@ -73,10 +73,18 @@ a:hover {
   border-radius: 100%;
   width: 3em;
   display: block;
+  position: absolute;
+  top: 7vw;
+  left: 11vw;
 }
   .hiddedevriesnl img {
     border-radius: 100%;
   }
+@media (min-width: 50em) {
+  .hiddedevriesnl {
+    position: static;
+  }
+} 
 h2 span {
   display: inline-block;
   background-color: black;
@@ -94,7 +102,7 @@ ul {
   overflow: auto;
   justify-content: start;
   grid-auto-flow: column;
-  grid-auto-columns: 75vw;
+  grid-auto-columns: 30vh;
 }
 @media (min-width: 50em) {
   ul {
@@ -122,6 +130,7 @@ li a:hover {
 }
 li img {
   width: 100%;
+  height: auto;
   display: block;
   background: #555;
   min-block-size: 16em;
