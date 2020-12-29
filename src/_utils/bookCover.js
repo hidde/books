@@ -28,7 +28,7 @@ module.exports = async function(src, alt, sizes = "100vw") {
     let lowsrc = metadata.jpeg[0];
 
     try {
-      return `<picture loading="lazy">
+      return `<picture>
         ${Object.values(metadata).map(imageFormat => {
           return `  <source type="image/${imageFormat[0].format}" srcset="${imageFormat.map(entry => entry.srcset).join(", ")}" sizes="${sizes}">`;
         }).join("\n")}
@@ -36,7 +36,9 @@ module.exports = async function(src, alt, sizes = "100vw") {
             src="${lowsrc.url}"
             width="${lowsrc.width}"
             height="${lowsrc.height}"
-            alt="${alt}">
+            alt="${alt}"
+            loading="lazy"
+          >
         </picture>`;
       } catch (err) {
         console.log(err)
