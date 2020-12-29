@@ -17,7 +17,7 @@
     <a href="/in/english/" {% if page.url == "/in/english/" %}aria-current="true"{% endif %}>English only</a>
     <a lang="nl" href="/in/nederlands/"{% if page.url == "/in/nederlands/" %} aria-current="true"{% endif %}>Alleen Nederlands</a>
   </nav>
-  
+
   {{ content | safe }}
 
   {% for year in years %}
@@ -31,7 +31,7 @@
         <details>
           <summary>
             {% set coverUri %}./src/covers/{{ book.fileSlug }}.jpg{% endset %}
-            {% book_cover coverUri, "", "(min-width:30em) 50vw, 100vw" %}
+            {% book_cover coverUri, "", "30vh, (min-width: 50em) 160px" %}
             <div{% if book.data.language != "en" %} lang="{{ book.data.language }}"{% endif %}>
               <strong>{{ book.data.title | safe }}</strong> 
               {% if book.data.language == "nl" %}door{% else %}by{% endif %} {{ book.data.author }}

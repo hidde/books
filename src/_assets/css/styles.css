@@ -94,7 +94,7 @@ ul {
   overflow: auto;
   justify-content: start;
   grid-auto-flow: column;
-  grid-auto-columns: 75vw;
+  grid-auto-columns: 30vh;
 }
 @media (min-width: 50em) {
   ul {
@@ -122,6 +122,7 @@ li a:hover {
 }
 li img {
   width: 100%;
+  height: auto;
   display: block;
   background: #555;
   min-block-size: 16em;
