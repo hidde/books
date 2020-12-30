@@ -6,6 +6,12 @@ body {
   font: 100%/1.5 'Fira Sans', sans-serif;
   padding-top: 28vw;
 }
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: midnightblue;
+    color: white;
+  }
+}
 @media (min-width: 50em) {
   body {
     padding-top: 0;
@@ -50,7 +56,12 @@ a:hover {
 .logo span {
   transform: rotate(-5deg);
   display: inline-block;
-  color: #555;
+  color: rgba(0, 0, 0, 0.5);
+}
+@media (prefers-color-scheme: dark) {
+  .logo span {
+    color: rgba(255, 255, 255, 0.5);
+  }
 }
 @media (min-width: 50em) {
   .logo {
