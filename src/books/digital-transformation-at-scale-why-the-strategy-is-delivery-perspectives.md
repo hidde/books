@@ -3,7 +3,7 @@ title: "Digital Transformation at Scale: Why the Strategy Is Delivery (Perspecti
 author: "Andrew Greenway"
 isbn: ""
 isbn13: ""
-rating: "5"
+rating: "4"
 publisher: "London Publishing Partnership"
 pages: "232"
 publishYear: "2018"
