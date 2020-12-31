@@ -27,7 +27,7 @@
       {% if page.url == "/in/english/" and book.data.language != "en" %}
       {% elif page.url == "/in/nederlands/" and book.data.language != "nl" %}
       {% else %}
-      <li>
+      <li{% if book.data.rating === "5" %} class="fave"{% endif %}>
         <details>
           <summary>
             {% set coverUri %}./src/covers/{{ book.fileSlug }}.jpg{% endset %}

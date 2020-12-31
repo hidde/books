@@ -132,6 +132,26 @@ li {
 li:nth-child(odd) {
   margin-top: 1em;
 }
+li.fave {
+  position: relative;
+}
+li.fave summary > div::before {
+  content: "5✯";
+  display: inline-block;
+  text-transform: uppercase;
+  margin-bottom: .5em;
+  font-weight: bold;
+  font-size: 100%;
+  position: absolute;
+  padding: .5em;
+  background-color: crimson;
+  top: -.75em;
+  right: -.5em;
+  transform: rotate(1deg);
+  border-radius: 100%;
+  margin-left: -1em;
+  height: 1.4em;
+}
 li a {
   color: white;
   transition: all 0.2s ease-in-out;

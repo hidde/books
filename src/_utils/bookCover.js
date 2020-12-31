@@ -9,7 +9,7 @@ module.exports = async function(src, alt, sizes = "100vw") {
 
     if (! fs.existsSync(src)) {
       console.error(`ERROR - ${src} does not exist`);
-      return false
+      return ""
     }
 
     let metadata = await Image(src, {
