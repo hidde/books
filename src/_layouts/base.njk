@@ -46,7 +46,7 @@
               {{ book.data.publisher }} ({{ book.data.publishYear }})
               {% if book.data.authorSite %}
               <span aria-hidden="true">・</span> 
-              <a href="{{ book.data.authorSite }}">Author's site</a>
+              <a href="{{ book.data.authorSite }}">Author's site <span class="visually-hidden">(for {{ book.data.title }})</span></a>
               {% endif %}
             </p>
           </details>
