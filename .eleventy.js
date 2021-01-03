@@ -1,4 +1,4 @@
-const bookCover = require("./src/_utils/bookCover.js");
+const bookCover = require("./src/_shortcodes/bookCover.js");
 const years = [
   "2020", 
   "2019", 
