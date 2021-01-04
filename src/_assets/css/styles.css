@@ -8,7 +8,7 @@ body {
 @media (prefers-color-scheme: dark) {
   body {
     background-color: midnightblue;
-    color: white;
+    color: khaki;
   }
 }
 aside {
@@ -49,7 +49,7 @@ h1 span {
 }
 @media (prefers-color-scheme: dark) {
   h1 span {
-     color: rgba(255, 255, 255, 0.75);
+     color: rgba(240,230,140, 0.75);
   }
 }
 @media (min-width: 50em) {
