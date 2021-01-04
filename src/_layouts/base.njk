@@ -11,7 +11,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet"> 
 </head>
 <body{% if pageClass %} class="{{ pageClass }}"{% endif %}>
-  <h1 class="logo">B<span>o</span>o<span>k</span>s</h1>
+  <header>
+    <a class="hiddedevriesnl" href="https://hiddedevries.nl/en"><img src="/favicon.png" alt="hiddedevries.nl"></a>
+    <h1 class="logo">B<span>o</span>o<span>k</span>s</h1>
+  </header> 
+
   <nav aria-label="Language filter">
     <a href="/" {% if page.url == "/" %}aria-current="true"{% endif %}>All books</a>
     <a href="/in/english/" {% if page.url == "/in/english/" %}aria-current="true"{% endif %}>English only</a>
@@ -47,6 +51,13 @@
               {% if book.data.authorSite %}
               <span aria-hidden="true">・</span> 
               <a href="{{ book.data.authorSite }}">Author's site <span class="visually-hidden">(for {{ book.data.title }})</span></a>
+              {% endif %}
+              {% if book.data.blogpost %}
+              <span aria-hidden="true">・</span> 
+              <a href="{{ book.data.blogpost }}" class="review-link">My review <span class="visually-hidden"> of {{ book.data.title }}</span></a>
+              {% endif %}
+              {% if book.data.read == "" %}
+              {{ book.data | log }}
               {% endif %}
             </p>
           </details>

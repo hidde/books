@@ -4,7 +4,6 @@ html {
 body {
   background-color: lavenderblush;
   font: 100%/1.5 'Fira Sans', sans-serif;
-  padding-top: 28vw;
 }
 @media (prefers-color-scheme: dark) {
   body {
@@ -12,20 +11,10 @@ body {
     color: white;
   }
 }
-@media (min-width: 50em) {
-  body {
-    padding-top: 0;
-  }
-  body.home {
-    padding-top: 50vh;
-  }
-  body.home > aside {
-    position: absolute;
-    top: 1em;
-    left: 3em;
-  }
+aside {
+  margin: 2em 0 40vh;
 }
-body.home > aside p:last-child {
+aside p:last-child {
   font-size: 80%;
   margin-top: 2em;
   font-style: italic;
@@ -46,56 +35,32 @@ a:hover {
   left: -9999em;
   top: -9999em;
 }
-.logo {
-  font: 25vw/0 'Bungee Outline';
+h1 {
+  font: 2.85em/.85 'Bungee Outline';
   white-space: nowrap;
-  position: absolute;
-  top: -9vw;
-  left: 2vw;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
 }
-.logo span {
+h1 span {
   transform: rotate(-5deg);
   display: inline-block;
   color: rgba(0, 0, 0, 0.5);
 }
 @media (prefers-color-scheme: dark) {
-  .logo span {
+  h1 span {
     color: rgba(255, 255, 255, 0.5);
   }
 }
 @media (min-width: 50em) {
-  .logo {
-    position: sticky;
-    font-size: 27vw;
-    top: -4vw;
-    left: 0;
-    z-index: -1;
-    margin-bottom: 0;
-    margin-top: 12vw;
+  h1 {
+    font-size: 4em;
   }
   h2 {
     position: sticky;
     top: 2em;
-    z-index: -1;
   }
 }
-.hiddedevriesnl {
-  border: 0;
-  border-radius: 100%;
-  width: 3em;
-  display: block;
-  position: absolute;
-  top: 7vw;
-  left: 11vw;
-}
-  .hiddedevriesnl img {
-    border-radius: 100%;
-  }
-@media (min-width: 50em) {
-  .hiddedevriesnl {
-    position: static;
-  }
-} 
 h2 span {
   display: inline-block;
   background-color: black;
@@ -104,6 +69,22 @@ h2 span {
   width: max-content;
   z-index: 1;
   position: relative;
+}
+.hiddedevriesnl {
+  border: 0;
+  border-radius: 100%;
+  width: 2em;
+  display: inline-block;
+  vertical-align: top;
+  padding: .25em;
+}
+  .hiddedevriesnl img {
+    border-radius: 100%;
+  }
+@media (min-width: 50em) {
+  .hiddedevriesnl {
+    width: 3em;
+  }
 }
 ul {
   padding: 0;
@@ -179,6 +160,14 @@ li strong {
 }
 img {
   max-width: 100%;
+}
+header {
+  text-align: center;
+}
+@media (min-width: 50em) {
+  header {
+    text-align: left;
+  }
 }
 nav {
   background-color: rgba(0, 0, 0, 0.6);
