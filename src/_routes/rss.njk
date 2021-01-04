@@ -1,0 +1,55 @@
+---json
+{
+  "permalink": "feed.xml",
+  "eleventyExcludeFromCollections": true,
+  "metadata": {
+    "title": "Hidde's books",
+    "subtitle": "Updates on what Hidde read",
+    "url": "https://books.hiddedevries.nl",
+    "feedUrl": "https://books.hiddededevries.nl/feed.xml",
+    "author": {
+      "name": "Hidde de Vries",
+      "email": "hidde@hiddedevries.nl"
+    }
+  }
+}
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ metadata.title }}</title>
+  <subtitle>{{ metadata.subtitle }}</subtitle>
+  <link href="{{ metadata.feedUrl }}" rel="self"/>
+  <link href="{{ metadata.url }}"/>
+  <updated>{{ collections.book | rssLastUpdatedDate }}</updated>
+  <id>{{ metadata.url }}</id>
+  <author>
+    <name>{{ metadata.author.name }}</name>
+    <email>{{ metadata.author.email }}</email>
+  </author>
+  {%- for post in collections.book %}
+  {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
+  <entry>
+    <title>{{ post.data.title }} by {{ post.data.author }}</title>
+    <link href="{{ absolutePostUrl }}"/>
+    <id>{{ absolutePostUrl }}</id>
+    <img src="{{ absolutePostUrl }}/covers/{{ post.fileSlug }}-160w.jpeg" alt="" />
+    <content type="html">
+      <h1>{{ post.data.title }} by {{ post.data.author }}</h1>
+      <dl>
+        <dt>ISBN</dt>
+        <dd>{{ post.data.isbn }}</dd>
+        <dt>ISBN13</dt>
+        <dd>{{ post.data.isbn13 }}</dd>
+        <dt>Rating</dt>
+        <dd>{{ post.data.rating }} stars</dd>
+        <dt>Published</dt>
+        <dd>{{ post.data.publisher }} ({{ post.data.publishYear }})</dd>
+        <dt>Pages</dt>
+        <dd>{{ post.data.pages }}</dd>
+        <dt>
+      </dl>
+      {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}
+   </content>
+  </entry>
+  {%- endfor %}
+</feed>
