@@ -10,4 +10,5 @@ publishYear: "2018"
 read: "2019"
 goodreads_id: "38212153"
 language: "en"
+blogpost: "https://hiddedevries.nl/en/blog/2019-07-05-click-here-to-kill-everybody-a-review"
 ---

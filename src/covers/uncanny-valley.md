@@ -9,4 +9,5 @@ pages: "281"
 publishYear: "2020"
 read: "2020"
 goodreads_id: "45186565"
+blogpost: "https://hiddedevries.nl/en/blog/2020-03-12-uncanny-valley"
 ---

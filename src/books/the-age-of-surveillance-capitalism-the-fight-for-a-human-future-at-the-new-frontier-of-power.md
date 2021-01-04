@@ -10,4 +10,5 @@ publishYear: "2019"
 read: "2019"
 goodreads_id: "26195941"
 language: "en"
+blogpost: "https://hiddedevries.nl/en/blog/2019-03-06-book-review-the-age-of-surveillance-capitalism"
 ---

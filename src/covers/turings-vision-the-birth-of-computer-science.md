@@ -7,6 +7,7 @@ rating: "0"
 publisher: "MIT Press"
 pages: "208"
 publishYear: "2016"
-read: ""
+read: "2017"
 goodreads_id: "27310514"
+blogpost: "https://hiddedevries.nl/en/blog/2017-04-21-book-tip-turings-vision"
 ---

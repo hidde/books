@@ -10,4 +10,6 @@ publishYear: "2019"
 read: "2019"
 goodreads_id: "37508642"
 language: "en"
+blogpost: "https://hiddedevries.nl/en/blog/2019-09-19-book-review-zed"
+authorSite: "http://joannakavenna.com/"
 ---
