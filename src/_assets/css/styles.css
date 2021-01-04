@@ -45,11 +45,11 @@ h1 {
 h1 span {
   transform: rotate(-5deg);
   display: inline-block;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.75);
 }
 @media (prefers-color-scheme: dark) {
   h1 span {
-    color: rgba(255, 255, 255, 0.5);
+     color: rgba(255, 255, 255, 0.75);
   }
 }
 @media (min-width: 50em) {
