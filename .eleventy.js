@@ -1,4 +1,5 @@
 const bookCover = require("./src/_shortcodes/bookCover.js");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 const years = [
   "2020", 
   "2019", 
@@ -8,6 +9,9 @@ const years = [
 
 module.exports = (function(eleventyConfig) {
     
+  eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addNunjucksAsyncShortcode("book_cover", bookCover);
+
   // create a collection of issues specific to each report, sorted by success criterion
   for (let i=0; i < years.length; i++) {
     eleventyConfig.addCollection(years[i], function (collectionApi) {
@@ -15,8 +19,6 @@ module.exports = (function(eleventyConfig) {
         .filter(item => (item.data.read === years[i]))
     });
   }
-
- eleventyConfig.addNunjucksAsyncShortcode("book_cover", bookCover);
 
   // Base Config
   return {
