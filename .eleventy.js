@@ -1,11 +1,6 @@
 const bookCover = require("./src/_shortcodes/bookCover.js");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
-const years = [
-  "2020", 
-  "2019", 
-  "2018",
-  "2017"
-];
+const years = require("./src/_data/years.json");
 
 module.exports = (function(eleventyConfig) {
     
