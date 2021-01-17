@@ -10,4 +10,5 @@ publishYear: "2017"
 read: "2020"
 goodreads_id: "34273236"
 language: "en"
+date: "2020-01-06"
 ---

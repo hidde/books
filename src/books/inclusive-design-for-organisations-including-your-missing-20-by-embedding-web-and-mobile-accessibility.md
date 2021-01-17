@@ -10,4 +10,5 @@ publishYear: "2019"
 read: "2020"
 goodreads_id: "48653316"
 language: "nl"
+date: "2020-01-01"
 ---

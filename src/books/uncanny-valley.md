@@ -11,4 +11,5 @@ read: "2020"
 goodreads_id: "45186565"
 language: "en"
 blogpost: "https://hiddedevries.nl/en/blog/2020-03-12-uncanny-valley"
+date: "2020-03-12"
 ---
