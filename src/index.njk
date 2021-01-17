@@ -6,10 +6,9 @@ pageClass: home
 
 <aside>
   <p>
-    <a href="#2020">2020</a> <span aria-hidden="true">・</span> 
-    <a href="#2019">2019</a> <span aria-hidden="true">・</span> 
-    <a href="#2018">2018</a> <span aria-hidden="true">・</span> 
-    <a href="#2017">2017</a> <span aria-hidden="true">・</span> 
+    {% for year in years %}
+    <a href="#{{ year }}">{{ year }}</a> <span aria-hidden="true">・</span> 
+    {% endfor %}
     <a href="https://github.com/hidde/books">Source code</a>
   </p>
   <p>Copyright of book covers lies with their respective owners, displayed under fair use.</p>
