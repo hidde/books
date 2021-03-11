@@ -1,0 +1,40 @@
+---
+label: Book
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: author
+  label: author
+- type: text
+  name: isbn
+  label: isbn
+- type: text
+  name: isbn13
+  label: isbn13
+- type: text
+  name: rating
+  label: rating
+- type: text
+  name: publisher
+  label: publisher
+- type: text
+  name: pages
+  label: pages
+- type: text
+  name: publishYear
+  label: publishYear
+- type: text
+  name: read
+  label: read
+- type: text
+  name: goodreads_id
+  label: goodreads_id
+- type: text
+  name: language
+  label: language
+- type: datetime
+  name: date
+  label: date
