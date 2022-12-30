@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/"
+  to = "https://hidde.blog/books"
+  status = 301
