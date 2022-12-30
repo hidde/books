@@ -6,6 +6,7 @@ module.exports = (function(eleventyConfig) {
     
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addNunjucksAsyncShortcode("book_cover", bookCover);
+  eleventyConfig.addPassthroughCopy("_redirects");
 
   // create a collection of issues specific to each report, sorted by success criterion
   for (let i=0; i < years.length; i++) {
